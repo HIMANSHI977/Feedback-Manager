@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3005";
+const API_URL = "https://feedback-manager-1-4pvz.onrender.com";
 
 const feedbackList =
   document.getElementById("feedback-list");
