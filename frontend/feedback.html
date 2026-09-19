@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>All Feedback</title>
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+<body>
+
+  <div class="container feedback-page">
+    <div class="feedback-header">
+      <p class="page-label">
+        FEEDBACK MANAGER
+      </p>
+      <h1>
+        All Student Feedback
+      </h1>
+      <p class="page-description">
+        View and manage feedback submitted by students.
+      </p>
+
+    </div>
+
+    <div
+      id="feedback-message"
+      class="feedback-message"
+    ></div>
+
+    <div id="feedback-list">
+
+      <p class="loading">
+        Loading feedback...
+      </p>
+
+    </div>
+
+    <div
+      id="edit-section"
+      class="edit-section hidden"
+    >
+
+      <div class="edit-header">
+
+        <div>
+
+          <p class="page-label">
+            UPDATE FEEDBACK
+          </p>
+
+          <h2>
+            Edit Feedback
+          </h2>
+
+        </div>
+
+
+        <button
+          type="button"
+          id="closeEditButton"
+          class="close-button"
+        >
+          ×
+        </button>
+
+      </div>
+
+      <form id="edit-form">
+
+        <input
+          type="hidden"
+          id="edit-id"
+        >
+
+        <label for="edit-name">
+          Student Name
+        </label>
+
+        <input
+          type="text"
+          id="edit-name"
+          placeholder="Enter student name"
+          required
+        >
+
+
+
+        <label for="edit-rating">
+          Rating
+        </label>
+
+        <select
+          id="edit-rating"
+          required
+        >
+
+          <option value="">
+            Select rating
+          </option>
+
+          <option value="5">
+            5 - Excellent
+          </option>
+
+          <option value="4">
+            4 - Good
+          </option>
+
+          <option value="3">
+            3 - Average
+          </option>
+
+          <option value="2">
+            2 - Poor
+          </option>
+
+          <option value="1">
+            1 - Very Poor
+          </option>
+
+        </select>
+
+        <label for="edit-comment">
+          Comment
+        </label>
+
+        <textarea
+          id="edit-comment"
+          placeholder="Write your feedback"
+          required
+        ></textarea>
+
+
+        <div class="edit-actions">
+
+          <button
+            type="button"
+            id="cancelEditButton"
+            class="cancel-button"
+          >
+            Cancel
+          </button>
+
+
+          <button
+            type="submit"
+            class="update-button"
+          >
+            Update Feedback
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+
+    <a
+      href="/"
+      class="back-link"
+    >
+      ← Back to Feedback Form
+    </a>
+
+  </div>
+
+
+
+  <script src="feedback.js"></script>
+
+</body>
+
+</html>
