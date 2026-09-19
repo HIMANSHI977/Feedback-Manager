@@ -1,3 +1,8 @@
+import express from "express";
 import app from "./backend/app.js";
 
-export default app;
+const server = express();
+
+server.use(app);
+
+export default server;
